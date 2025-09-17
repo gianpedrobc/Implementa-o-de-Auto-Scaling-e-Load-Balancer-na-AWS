@@ -10,7 +10,7 @@ A infraestrutura começa com a configuração de rede, incluindo **VPC, subnets 
 ---
 
 ## Auto Scaling
-O **Auto Scaling** ajusta automaticamente a quantidade de servidores para manter desempenho estável e controlar custos.
+O **Auto Scaling** ajusta automaticamente a quantidade de servidores para manter desempenho estável e controlar custos.Imagine que sua aplicação é uma loja e os servidores são os caixas: quando a loja enche, o Auto Scaling “chama mais caixas” (instâncias) e, quando o movimento diminui, “dispensa alguns” para economizar dinheiro, mantendo sempre o número certo de servidores.
 
 ### Principais funções
 - **Monitoramento:** acompanha métricas como CPU, tráfego de rede e número de conexões.
@@ -33,9 +33,11 @@ O **Auto Scaling** ajusta automaticamente a quantidade de servidores para manter
 - Monitoramento: CPU média < 30% por 5 minutos → remove 1 instância.
 
 ---
-
+**Application Load Balancer (ALB)**  
+  ![ALB](https://images.openai.com/thumbnails/url/bJGxC3icu1mSUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw4s9i1JK4xMDA40LPbzK3MzNUmpSglMM_fJzUkKy3LxKUrOdDNMjjf0zwjyjTRyiXcJMDfIzk8yTXUudVQrBgAmhCmt)
+---
 ## Load Balancer
-O **Load Balancer** distribui o tráfego entre várias instâncias EC2, garantindo **alta disponibilidade** e **desempenho estável**.
+O **Load Balancer** distribui o tráfego entre várias instâncias EC2, garantindo **alta disponibilidade** e **desempenho estável**.Pense nele como o porteiro de um prédio, que direciona os visitantes para diferentes elevadores para evitar sobrecarga.
 
 ### Principais funções
 - Distribui o tráfego de forma inteligente entre as instâncias.
@@ -102,3 +104,4 @@ Este projeto foi realizado com o objetivo de **aprender na prática** como confi
 - **Alta disponibilidade**  
 - **Desempenho estável**  
 - **Controle de custos**
+
