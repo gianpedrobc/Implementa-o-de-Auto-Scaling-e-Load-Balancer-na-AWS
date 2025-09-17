@@ -44,7 +44,7 @@ O **Load Balancer** distribui o tráfego entre várias instâncias EC2, garantin
    - **Application Load Balancer (ALB)**
    - **Network Load Balancer (NLB)**
    - **Gateway Load Balancer (GLB)**  
-   *(ALB é o mais comum para aplicações web)*
+   *(ALB é para aplicações web)*
 2. Crie um **Target Group** e adicione as instâncias que receberão o tráfego.
 3. Configure o **Listener** (porta e protocolo, ex.: HTTP:80) para receber requisições.
 
@@ -95,11 +95,8 @@ O **Amazon CloudWatch** monitora métricas e cria alarmes que podem ser usados p
 ---
 
 ## Observações Finais
-Este projeto foi realizado com o objetivo de **aprender na prática** como configurar e integrar serviços de escalabilidade e balanceamento na AWS, garantindo:
+Este projeto foi realizado com o objetivo de **aprender na prática** como configurar e integrar serviços de escalabilidade e balanceamento na AWS.
 
-- **Alta disponibilidade**  
-- **Desempenho estável**  
-- **Controle de custos**
 
 
 
