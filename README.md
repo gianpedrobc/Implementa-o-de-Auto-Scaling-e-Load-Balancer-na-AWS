@@ -8,8 +8,9 @@ Este projeto teve como objetivo implementar e compreender os serviços **Launch 
 A infraestrutura começa com a configuração de rede, incluindo **VPC, subnets e gateways**. Em seguida, cria-se uma instância EC2 com os serviços necessários, a partir da qual é gerada uma **AMI**. Esta AMI é utilizada no **Launch Template**, servindo de base para que o **Auto Scaling** gerencie automaticamente as instâncias conforme a demanda.
 
 ---
-
 ## Auto Scaling
+![Auto Scaling](https://images.openai.com/thumbnails/url/5T5Jk3icu1mSUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw508S0xSI8yKcvMNUrJSzPPSUm1zA7ycXU2dUlNDs83KjLz9w0uzUsKDnd2tDBKqjLIjyr39ir1iU_xLVcrBgATrCnO)
+
 O **Auto Scaling** ajusta automaticamente a quantidade de servidores para manter desempenho estável e controlar custos.Imagine que sua aplicação é uma loja e os servidores são os caixas: quando a loja enche, o Auto Scaling “chama mais caixas” (instâncias) e, quando o movimento diminui, “dispensa alguns” para economizar dinheiro, mantendo sempre o número certo de servidores.
 
 ### Principais funções
@@ -33,10 +34,10 @@ O **Auto Scaling** ajusta automaticamente a quantidade de servidores para manter
 - Monitoramento: CPU média < 30% por 5 minutos → remove 1 instância.
 
 ---
-**Application Load Balancer (ALB)**  
-  ![ALB](https://images.openai.com/thumbnails/url/bJGxC3icu1mSUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw4s9i1JK4xMDA40LPbzK3MzNUmpSglMM_fJzUkKy3LxKUrOdDNMjjf0zwjyjTRyiXcJMDfIzk8yTXUudVQrBgAmhCmt)
----
 ## Load Balancer
+  ![ALB](https://images.openai.com/thumbnails/url/bJGxC3icu1mSUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw4s9i1JK4xMDA40LPbzK3MzNUmpSglMM_fJzUkKy3LxKUrOdDNMjjf0zwjyjTRyiXcJMDfIzk8yTXUudVQrBgAmhCmt)
+  
+
 O **Load Balancer** distribui o tráfego entre várias instâncias EC2, garantindo **alta disponibilidade** e **desempenho estável**.Pense nele como o porteiro de um prédio, que direciona os visitantes para diferentes elevadores para evitar sobrecarga.
 
 ### Principais funções
@@ -80,6 +81,8 @@ As regras de **Scaling** determinam quando o Auto Scaling deve adicionar ou remo
 ---
 
 ## Integração com CloudWatch
+![CloudFormation](https://images.openai.com/thumbnails/url/turn0image0)
+
 O **Amazon CloudWatch** monitora métricas e cria alarmes que podem ser usados para:
 
 - Acionar políticas do Auto Scaling automaticamente.
@@ -104,4 +107,5 @@ Este projeto foi realizado com o objetivo de **aprender na prática** como confi
 - **Alta disponibilidade**  
 - **Desempenho estável**  
 - **Controle de custos**
+
 
